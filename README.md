@@ -18,7 +18,7 @@
 
 ### &nbsp;&nbsp;Practice 1..
 
-#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
+#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions..
    
 1.- Initialize sample size
 2.- Initialize counter
