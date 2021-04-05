@@ -17,3 +17,10 @@ filter_1960 <- TestData$Year==1960
 filter_1960
 TestData_1960 <- TestData[filter_1960,]
 TestData_1960
+
+head(TestData_1960)
+TestData_1960 <- merge(TestData_1960, DataLife, by.x = "Country.Code", by.y = "Code")
+head(TestData_1960)
+TestData_1960$Life_2013 <- NULL
+head(TestData_1960)
+qplot(data=TestData_1960, x=Fertility.Rate, xlab = "Fertility", y=Life_1960, ylab = "Life Expectancy", main = "Year 1960", color=Region, size=I(1))
