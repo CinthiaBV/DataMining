@@ -24,3 +24,17 @@ head(TestData_1960)
 TestData_1960$Life_2013 <- NULL
 head(TestData_1960)
 qplot(data=TestData_1960, x=Fertility.Rate, xlab = "Fertility", y=Life_1960, ylab = "Life Expectancy", main = "Year 1960", color=Region, size=I(1))
+
+
+# Data Life Expectancy and fertility , year 2013
+filter_2013 <- TestData$Year==2013
+filter_2013
+TestData_2013 <- TestData[filter_2013,]
+TestData_2013
+
+head(TestData_2013)
+TestData_2013 <- merge(TestData_2013, DataLife, by.x = "Country.Code", by.y = "Code")
+head(TestData_2013)
+TestData_2013$Life_1960 <- NULL
+head(TestData_2013)
+qplot(data=TestData_2013, x=Fertility.Rate,  xlab = "Fertility", y=Life_2013, ylab = "Life Expectancy", main = "Year 2013", color=Region, size=I(1))
