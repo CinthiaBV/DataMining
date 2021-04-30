@@ -10,7 +10,7 @@
 ### <p align="center">  No. de control y nombre del alumno: 15211916 - Vargas Garcia Cinthia Gabriela</p>
 ### <p align="center">  No. de control y nombre del alumno: 15212354 - Francisco Javier Diaz Urias </p>
 
-## Index
+### Index
 &nbsp;&nbsp;&nbsp;[Practice 1](#practice-1)  
 
 ### &nbsp;&nbsp;Practice 1.
