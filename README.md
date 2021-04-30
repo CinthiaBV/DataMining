@@ -69,6 +69,6 @@ ggplot(data = TimeUse) +
 
 ```
 
-![](/Image/puntos.jpg)
-![](/Image/facetas.jpg)
-![](/Image/distribucion.jpg)
+![](/Unit-2/puntos.jpg)
+![](/Unit-2/facetas.jpg)
+![](/Unit-2/distribucion.jpg)
