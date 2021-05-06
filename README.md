@@ -73,9 +73,9 @@ ggplot(data = TimeUse) +
 #### Plots
 
 
-![](Unit-2/Image/puntos.jpg)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/puntos.JPG?raw=true)
 
-![](Unit-2/Image/facetas.jpg)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/facetas.JPG?raw=true)
 
-![](Unit-2/Image/distribucion.jpg)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/distribucion.JPG?raw=true)
 
