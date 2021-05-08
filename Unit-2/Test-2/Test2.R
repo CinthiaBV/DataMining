@@ -34,3 +34,10 @@ library(ggplot2)
 # Declaration of the input data and set values to "x" and "y"
 gg <- ggplot(movies, aes(x=Genre, y=GrossPor, color=Studio,Size=Budget))
 
+# Create a plot using geom_gitter and geom_boxplot to graph the values, also customize the plot the closet thing to the example
+gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.5,color="Black",outlier.shape = NA)+ theme(
+  plot.title = element_text(color="Black", size=16, hjust = 0.5),
+  axis.title.x = element_text(color="blue", size=16),
+  axis.title.y = element_text(color="blue", size=16)
+)  +  ggtitle("Domestic Gross % by Genre") + ylab("Gross %US")  
+
