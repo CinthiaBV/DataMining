@@ -75,11 +75,11 @@ ggplot(data = TimeUse) +
 #### Plots
 
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/puntos.JPG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/puntos.JPG?raw=true)
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/facetas.JPG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/facetas.JPG?raw=true)
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/distribucion.JPG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/distribucion.JPG?raw=true)
 
 ### &nbsp;&nbsp;Test 2 .
 
