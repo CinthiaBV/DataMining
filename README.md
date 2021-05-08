@@ -13,9 +13,9 @@
 ### Index
 &nbsp;&nbsp;&nbsp;[Practice 1](#practice-1)  
 
-&nbsp;&nbsp;&nbsp;[Test 2 ](#Test-2)  
-
 &nbsp;&nbsp;&nbsp;[Research](#Research)  
+
+&nbsp;&nbsp;&nbsp;[Test 2](#Test-2)  
 
 ### &nbsp;&nbsp;Practice 1.
 
@@ -140,7 +140,7 @@ Student distribution
 
 In probability and statistics, the t (Student's) distribution is a probability distribution that arises from the problem of estimating the mean of a normally distributed population when the sample size is small. It arises, in most practical statistical studies, when the standard deviation of a population is unknown and must be estimated from the data of a sample. • The t-Student test was developed in 1899 by the English chemist William Sealey Gosset (1876-1937), while working on quality control techniques for the Guinness distilleries in Dublin. Because at the distillery, his job was not initially that of a statistician and his dedication should be exclusively aimed at improving production costs, he published his findings anonymously by signing his articles with the name of "Student".
 
-### &nbsp;&nbsp;Test 2 .
+### &nbsp;&nbsp;Test 2.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
 
