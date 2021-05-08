@@ -453,36 +453,7 @@ Bibliography
 https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/pair-programming/
  
 A. (2016, November 3). Pair programming: improving the development process. 4R Solutions | Web & Mobile Design, Development and Programming.
-https://www.4rsoluciones.com/blog/pair-programming-mejorando-el-proceso-dedesarrollo-2/
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-
+https://www.4rsoluciones.com/blog/pair-programming-mejorando-el-proceso-dedesarrollo-2
 
 
 ## Unit-2
