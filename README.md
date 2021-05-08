@@ -11,13 +11,13 @@
 ### <p align="center">  No. de control y nombre del alumno: 15212354 - Francisco Javier Diaz Urias </p>
 
 ### Index
-&nbsp;&nbsp;&nbsp;[Practice 1](#practice-1)  
+&nbsp;&nbsp;&nbsp;[Practice_1 ](#practice-1)  
 
-&nbsp;&nbsp;&nbsp;[Research](#Research)  
+&nbsp;&nbsp;&nbsp;[Research Data Mining](#Research)  
 
-&nbsp;&nbsp;&nbsp;[Test 2](#Test-2)  
+&nbsp;&nbsp;&nbsp;[Test_2](#Test-2)  
 
-### &nbsp;&nbsp;Practice 1.
+### &nbsp;&nbsp;Practice_1.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
 
@@ -83,7 +83,7 @@ ggplot(data = TimeUse) +
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/distribucion.JPG?raw=true)
 
-### &nbsp;&nbsp;Research.
+### &nbsp;&nbsp;Research Data Mining.
 
 ## Origin of graphs
 
@@ -142,7 +142,7 @@ Student distribution
 
 In probability and statistics, the t (Student's) distribution is a probability distribution that arises from the problem of estimating the mean of a normally distributed population when the sample size is small. It arises, in most practical statistical studies, when the standard deviation of a population is unknown and must be estimated from the data of a sample. • The t-Student test was developed in 1899 by the English chemist William Sealey Gosset (1876-1937), while working on quality control techniques for the Guinness distilleries in Dublin. Because at the distillery, his job was not initially that of a statistician and his dedication should be exclusively aimed at improving production costs, he published his findings anonymously by signing his articles with the name of "Student".
 
-### &nbsp;&nbsp;Test 2.
+### &nbsp;&nbsp;Test_2.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
 
@@ -212,5 +212,5 @@ gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/183771764_1152345595188409_6233300732558023209_n.png?raw=true)
 
-### &nbsp;&nbsp; Video Link .
+### &nbsp;&nbsp; Video Link Unit 2 .
  https://youtu.be/hKKwGGqpfUM
