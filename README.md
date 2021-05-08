@@ -11,11 +11,12 @@
 ### <p align="center">  No. de control y nombre del alumno: 15212354 - Francisco Javier Diaz Urias </p>
 
 ### Index
-&nbsp;&nbsp;&nbsp;[Practice_1 ](#practice-1)  
 
-&nbsp;&nbsp;&nbsp;[Research Data Mining](#Research)  
+&nbsp;&nbsp;&nbsp;[Practice_1 ](#practice_2)  
 
-&nbsp;&nbsp;&nbsp;[Test_2](#Test-2)  
+&nbsp;&nbsp;&nbsp;[Research Data Mining](#Research Data Mining)  
+
+&nbsp;&nbsp;&nbsp;[Test_2](#Test_2)  
 
 ### &nbsp;&nbsp;Practice_1.
 
@@ -212,5 +213,5 @@ gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/183771764_1152345595188409_6233300732558023209_n.png?raw=true)
 
-### &nbsp;&nbsp; Video Link Unit 2 .
+### &nbsp;&nbsp; Video Link Unit_2 .
  https://youtu.be/hKKwGGqpfUM
