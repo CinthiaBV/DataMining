@@ -75,11 +75,11 @@ ggplot(data = TimeUse) +
 #### Plots
 
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/puntos.JPG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/puntos.JPG?raw=true)
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/facetas.JPG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/facetas.JPG?raw=true)
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/distribucion.JPG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/distribucion.JPG?raw=true)
 
 ### &nbsp;&nbsp;Test 2 .
 
@@ -145,5 +145,9 @@ gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.
 
 
 ```
+
+### Plot
+
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/183771764_1152345595188409_6233300732558023209_n.png?raw=true)
 
 ### &nbsp;&nbsp; Video Link .
