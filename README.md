@@ -146,4 +146,8 @@ gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.
 
 ```
 
+### Plot
+
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/183771764_1152345595188409_6233300732558023209_n.png?raw=true)
+
 ### &nbsp;&nbsp; Video Link .
