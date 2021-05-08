@@ -87,8 +87,10 @@ ggplot(data = TimeUse) +
 
 ## Origin of graphs
 
-What is the origin of the graphs?
 
+
+What is the origin of the graphs?
+<div align="justify">
 Just over 250 years ago, the natural philosopher and theologian Joseph Priestley (1733-1804) published in his work A New Chart of History the first known chronograms. Priestley was a great pedagogue in very diverse subjects such as grammar or history, the study of which was for him a moral imperative. And it was precisely for his history classes that he designed a type of graph where different bars on a timeline represented in context and allowed different time periods to be compared, such as lives of people or durations of empires. Priestley's schedules caused a sensation, and his work was reissued dozens of times.
 
 
@@ -205,14 +207,10 @@ gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.
 
 ```
 
-<<<<<<< HEAD
-### &nbsp;&nbsp; Video Link .
 
-https://youtu.be/hKKwGGqpfUM
-=======
 ### Plot
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/183771764_1152345595188409_6233300732558023209_n.png?raw=true)
 
 ### &nbsp;&nbsp; Video Link .
->>>>>>> b544807e9c8c435b1caf8d39e5e79c79dcee3703
+ https://youtu.be/hKKwGGqpfUM
