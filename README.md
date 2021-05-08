@@ -107,13 +107,11 @@ movies <- read.csv("Project-Data.csv")
 # Show the first rows data of the file to use
 head(movies)
 
-# # Summary 
-
-summary(movies)
-
-# Tail
-
+# Show the lat rows of the file
 tail(movies)
+
+#Summary of the movies
+summary(movies)
 
 # Rename the columns 
 colnames(movies) <- c("Day_Week","Director","Genre","Title","Release_Date","Studio","Adjusted Gross","Budget","Gross","IMDb_Rating","MovieLens_Rating","Overseas","Overseas%","Profit","Profit%","Runtime","US","GrossPor")

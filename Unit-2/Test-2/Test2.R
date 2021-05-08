@@ -24,3 +24,13 @@ filter_movies <- (movies$Genre=="action" | movies$Genre=="adventure" | movies$Ge
 # Shows the previously made filter, each data shows it as true or false
 filter_movies 
 
+# Compares the data that was loaded with the array 
+movies <- movies[filter_movies,]
+head(movies)
+
+# Load the library to use, in this case to use plots we are using ggplot2
+library(ggplot2) 
+
+# Declaration of the input data and set values to "x" and "y"
+gg <- ggplot(movies, aes(x=Genre, y=GrossPor, color=Studio,Size=Budget))
+
