@@ -9,5 +9,18 @@ movies <- read.csv("Project-Data.csv")
 # Show the first rows data of the file to use
 head(movies)
 
+# Show the lat rows of the file
+tail(movies)
 
+#Summary of the movies
+summary(movies)
+
+# Rename the columns 
+colnames(movies) <- c("Day_Week","Director","Genre","Title","Release_Date","Studio","Adjusted Gross","Budget","Gross","IMDb_Rating","MovieLens_Rating","Overseas","Overseas%","Profit","Profit%","Runtime","US","GrossPor")
+
+# Filter the data to eliminate unnecessary data
+filter_movies <- (movies$Genre=="action" | movies$Genre=="adventure" | movies$Genre=="animation" | movies$Genre=="comedy" | movies$Genre=="drama") & (movies$Studio=="Buena Vista Studios" | movies$Studio=="Fox" | movies$Studio=="Paramount Pictures" | movies$Studio=="Sony" | movies$Studio=="Universal" | movies$Studio=="WB")
+
+# Shows the previously made filter, each data shows it as true or false
+filter_movies 
 
