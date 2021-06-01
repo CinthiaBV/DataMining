@@ -24,87 +24,132 @@
 #### &nbsp;&nbsp;&nbsp;&nbsp; Code.
 ````R
 getwd()
-setwd("C:/Users/cheli/Documents/DataMining-master/MachineLearning/MultipleLinearRegression")
+setwd("C:/Users/cheli/Documents/DataMining-master/MachineLearning/LogisticRegression")
 getwd()
 
 # Importing the dataset
-dataset <- read.csv('50_Startups.csv')
+dataset <- read.csv('Social_Network_Ads.csv')
+dataset <- dataset[, 3:5]
 
-# Encoding categorical data 
-dataset$State = factor(dataset$State,
-                       levels = c('New York', 'California', 'Florida'),
-                       labels = c(1,2,3))
-
-dataset
 # Splitting the dataset into the Training set and Test set
-Install.packages('caTools')
+# Install.packages('caTools')
 library(caTools)
 set.seed(123)
-split <- sample.split(dataset$Profit, SplitRatio = 0.8)
+split <- sample.split(dataset$Purchased, SplitRatio = 0.75)
 training_set <- subset(dataset, split == TRUE)
 test_set <- subset(dataset, split == FALSE)
 
-# Fitting Multiple Linear Regression to the Training set
-#regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State)
-regressor = lm(formula = Profit ~ .,
-               data = training_set )
+# Feature scaling
+training_set[, 1:2] <- scale(training_set[, 1:2])
+test_set[, 1:2] <- scale(test_set[, 1:2])
 
-summary(regressor)
+# Fitting Logistic Regression to Training set
+classifier = glm(formula = Purchased ~ .,
+                 family = binomial,
+                 data = training_set)
 
-# Prediction the Test set results
-y_pred = predict(regressor, newdata = test_set)
+# Predicting the Test set results
+prob_pred = predict(classifier, type = 'response', newdata = test_set[-3])
+prob_pred
+y_pred = ifelse(prob_pred > 0.5, 1, 0)
 y_pred
 
-# Assigment: visualize the siple liner regression model with R.D.Spend 
+# Making the Confusion Metrix
+cm = table(test_set[, 3], y_pred)
+cm
 
-# Building the optimal model using Backward Elimination
-regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State,
-               data = dataset )
-summary(regressor)
+# Using library ggplot2 visualize the data of the dataset on a graph
+library(ggplot2)
 
-regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend,
-               data = dataset )
-summary(regressor)
+# Visualize data for training set of estimated salary on 'x' and purchased on 'y'
+ggplot(training_set, aes(x=EstimatedSalary, y=Purchased)) + geom_point() + 
+  stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
-regressor = lm(formula = Profit ~ R.D.Spend + Marketing.Spend,
-               data = dataset )
-summary(regressor)
+# Visualize data for training set of Age on 'x' and purchased on 'y'
+ggplot(training_set, aes(x=Age, y=Purchased)) + geom_point() + 
+  stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
-regressor = lm(formula = Profit ~ R.D.Spend + Marketing.Spend,
-               data = dataset )
-summary(regressor)
+# Visualize data for test set of estimated salary on 'x' and purchased on 'y' 
+ggplot(test_set, aes(x=EstimatedSalary, y=Purchased)) + geom_point() + 
+  stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
-y_pred = predict(regressor, newdata = test_set)
-y_pred
+# Visualize data for test set of Age on 'x' and purchased on 'y'
+ggplot(test_set, aes(x=Age, y=Purchased)) + geom_point() + 
+  stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
-# Homework analyze the follow atomation backwardElimination function 
+# Visualization the Training set result
+# install.packages('ElemStatLearn') No work for me, 
+# manual mode. Go to this URL https://cran.r-project.org/src/contrib/Archive/ElemStatLearn/
+# Download with the latest date 2019-08-12 09:20	12M
+# Then follow this page steps https://riptutorial.com/r/example/5556/install-package-from-local-source
 
-#Create the function and assign the parameters
-backwardElimination <- function(x, sl) {
-  # Create a variable 'numVars' and its equal a the length of 'x'
-  numVars = length(x)
-  # Create a cycle  for each value  of continuous data starting from its first value the function 
-  for (i in c(1:numVars)){
-    #Create the variable 'regressor' for the values of the linear regression
-    regressor = lm(formula = Profit ~ ., data = x)
-    #Create the variable 'maxVar' in this have the vector with de max coefficient
-    maxVar = max(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"])
-    #If 'maxVar' is greater then 'sl' execute the variable 'j' and 'j' its deleted from 'x'
-    if (maxVar > sl){
-      j = which(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"] == maxVar)
-      x = x[, -j]
-    }
-    # Remove one unit from the length of our dataset, from the for, and return the sum of all the values inside regressor, the cycle continues until  p-value.
-    numVars = numVars - 1
-  }
-  return(summary(regressor))
-}
+# Import library ElemStatLearn
+library(ElemStatLearn)
 
-SL = 0.05
-#dataset = dataset[, c(1,2,3,4,5)]
-training_set
-backwardElimination(training_set, SL)
+# In this part we are using the training set to a new graph to visualize the training set results
+set = training_set
+X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
+X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+
+#Give a name at the columns to use and predict also set the limit of the plot and other settings
+colnames(grid_set) = c('Age', 'EstimatedSalary')
+prob_set = predict(classifier, type = 'response', newdata = grid_set)
+y_grid = ifelse(prob_set > 0.5, 1, 0)
+plot(set[, -3],
+     main = 'Logistic Regression (Training set)',
+     xlab = 'Age', ylab = 'Estimated Salary',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+
+#  Import library ElemStatLearn
+library(ElemStatLearn)
+
+# In this part we are using the training set to a new graph to visualize the test set results
+set = test_set
+X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
+X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+
+#Give a name at the columns to use and predict also set the limit of the plot and other settings
+colnames(grid_set) = c('Age', 'EstimatedSalary')
+prob_set = predict(classifier, type = 'response', newdata = grid_set)
+y_grid = ifelse(prob_set > 0.5, 1, 0)
+plot(set[, -3],
+     main = 'Logistic Regression (Test set)',
+     xlab = 'Age', ylab = 'Estimated Salary',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ````
+#### Plots Practice 1
+
+EstimatedSalary/Purchased traning set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/EstimatedSalary-Purchased-training-set.png?raw=true)
+
+Age/Purchased training set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Age-Purchased-training-set.png?raw=true)
+
+EstimatedSalary/Purchased test set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/EstimatedSalary-Purchased-test-set.png?raw=true)
+
+Age/Purchased test set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Age-Purchased-test-set.png?raw=true)
+
+Logistic Regression training set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistec%20regression-Training%20set-1.png?raw=true)
+
+Logistic Regression training set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistec%20regression-Training%20set-2.png?raw=true)
+
+Logistic Regression test set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistec%20regression-Test%20set-1.png?raw=true)
+
+Logistic Regression test set
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistec%20regression-Test%20set-2.png?raw=true)
 
 ### &nbsp;&nbsp;Practice 2.
 
