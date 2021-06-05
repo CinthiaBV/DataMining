@@ -237,6 +237,11 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 #### Plots Practice 2
 
 Knn set 
+<<<<<<< HEAD
+=======
+ ![](/Images/knn.jpg)
+
+>>>>>>> 755629072dce402f5d29035d0a6272d1312b18f8
 
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raq=true)
