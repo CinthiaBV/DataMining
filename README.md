@@ -164,7 +164,6 @@ Logistic Regression test set
 #### K-Nearest Neighbors (K-NN).
 
 
-
 #### &nbsp;&nbsp;&nbsp;&nbsp; Code.
 ````R
 
@@ -237,16 +236,9 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 #### Plots Practice 2
 
 Knn set 
-<<<<<<< HEAD
-=======
- ![](/Images/knn.jpg)
-
->>>>>>> 755629072dce402f5d29035d0a6272d1312b18f8
 
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raq=true)
-
-
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raw=true)
 
 
 
@@ -339,5 +331,14 @@ plot(classifier)
 
 ````
 
+#### Plots Practice 2
+
+![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture.PNG?raw=true)
+
+![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture1.PNG?raw=true)
+
+![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture2.PNG?raw=true)
+
+![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture3.PNG?raw=true)
 
 
