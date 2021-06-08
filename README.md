@@ -237,6 +237,8 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
 Knn set 
 
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raw=true)
+
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raw=true)
 
@@ -417,15 +419,15 @@ plot(classifier)
 
 ````
 
-#### Plots Practice 2
+#### Plots Practice 4
 
-![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture.PNG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture.PNG?raw=true)
 
-![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture1.PNG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture1.PNG?raw=true)
 
-![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture2.PNG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture2.PNG?raw=true)
 
-![] (https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture3.PNG?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Capture3.PNG?raw=true)
 
 
 ### &nbsp;&nbsp;Practice 5.
