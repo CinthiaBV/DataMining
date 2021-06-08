@@ -19,3 +19,18 @@ test_set = subset(dataset, split == FALSE)
 # Feature Scaling
 training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
+
+# Fitting  Naive Bayes  classifier to the Training set
+# Install.packages('e1071')
+library(e1071)
+classifier = naiveBayes(x = training_set[-3],
+                        y = training_set$Purchased)
+naiveBayes
+
+# Predicting the Test set results
+y_pred = predict(classifier, newdata = test_set[-3])
+y_pred
+
+# Making the Confusion Matrix
+cm = table(test_set[, 3], y_pred)
+cm
