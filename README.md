@@ -240,8 +240,6 @@ Knn set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raw=true)
 
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raw=true)
-
 ### &nbsp;&nbsp;Practice 3.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
