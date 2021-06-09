@@ -664,3 +664,275 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ### Link of Evaluation
 
 https://youtu.be/VPxcUOR3qyg
+
+### <p align="justify">  
+Contents
+ 
+Pair Programming 
+
+What is pair programming? 
+
+Practice in pair programming 
+
+Advantages and disadvantages of pair programming 
+
+What are the benefits of this approach? 
+
+Pair Programming
+ 
+<div align="justify">Developing new software is not an easy process. Depending on the size of the program, a large number of potential junctures, roles, and problematic issues will need to be considered. Even the most experienced software developers can become disoriented. Hence, in recent years other more modern working methods have been developed that allow more efficient programming and generate error-free code: Scrum and Kanban serve, for example, to improve the complete system.
+Pair programming does not try to be all that encompassing: developers always work in pairs on the code. How does it work and what are the advantages of this working method?
+What is pair programming?
+ 
+The method known as pair programming is used mainly in agile software development and, more specifically, in extreme programming (XP). Pair programming specifies that there are always two people working on the code at the same time and that they sit together as much as possible. One is in charge of writing the code and the other of supervising it in real time. At the same time, they are constantly exchanging impressions: they discuss problems, find solutions and develop creative ideas.
+These two workers are typically assigned different roles: the programmer who has been assigned the pilot role is in charge of writing the code. The programmer who has been assigned the copilot role is in charge of monitoring that code. One of the rules of pair programming states that these two roles are exchanged regularly (at short intervals). In this way, a possible hierarchical gap is avoided: equality between both workers is promoted and a fluid exchange of roles is achieved.
+
+n addition, the workspace should ideally also be tailored to the specific requirements of pair programming. Each worker must have their own mouse, keyboard and screen, which will always show the same information as the colleague's.
+Somewhat less common is the method called remote pair programming. In this case, the programmers do not sit together, but are located in completely different places. For this method to work, you must have special technical solutions. Even despite the distance, colleagues must have a direct line of communication and must be able to access the code and view modifications in real time.
+Practice in pair programming
+ 
+In practice, this is usually a collaboration between two developers with different degrees of experience: thus, a more experienced worker can pass on their knowledge to their younger colleagues directly through practice. On the other hand, it is possible that a younger worker will come up with other ideas, perhaps more innovative, that they can contribute to the project.
+Likewise, a mix of workers from different industries can also be quite beneficial: if an old-school programmer collaborates with a designer, the combination of their experiences can be quite helpful for both.
+
+The working method is very useful mainly for large projects. The “four eyes” principle is especially effective when you have to deal with large amounts of code that also needs to be changed regularly. It guarantees that the best possible version of a fragment will always be inserted in the source text, reducing the amount of errors, so that it will not be necessary to carry out so many retouching. Post-monitoring of very long source codes requires a lot of time and effort, so it is best if these codes are set error-free from scratch as far as possible.
+However, it is not always mandatory that this collaboration is between the same colleagues, even in the case of the same project. In fact, it can be beneficial to mix these pairs regularly. This way, all team members can get a good idea of ​​the full source text. This allows the success of the project to be less dependent on the different people involved. If one of them fails, it does not jeopardize the entire project, since the rest can compensate for its absence.
+Advantages and disadvantages of pair programming
+ 
+Working as a couple on a project, whether it is scheduling or otherwise, has many advantages. In general, four eyes see much more than just two - the pair programming method minimizes the risk of errors. While one person writes the code, the other visualizes it and concentrates only on finding errors. In general, it is quite difficult for us to detect the errors themselves. It is usually our colleagues who detect them most quickly.
+
+Another of the great advantages derived from communication is the constant development of creativity: the constant exchange that takes place between the pair of programmers causes ideas that perhaps would not be had if the work were individual. Intercom also ensures that problems can be better solved in less time. Well, while a person who works alone can be satisfied with the first option that seems best to him, the people involved in pair programming must always justify their decisions to the rest. It is possible that they have another perception of the problem and are not satisfied with the solution that is proposed to them. This generates a debate in which new ideas are often presented that lead to a much better code.
+Good code is also concise code: experience dictates that source text generated by pair programming tends to be shorter in layout and therefore more efficient. This allows a later saving in resources in case of maintenance and adaptation.
+As we have already mentioned, this technique can also be used to allow more experienced workers to share their knowledge with their younger colleagues. This not only takes advantage of the essential advantage of pair programming, which is the generation of high-quality code, but can also be used simultaneously for training purposes.
+
+However, this is all very time consuming: two programmers work together much faster than one alone, but no more than two programmers working separately. This means that this method makes projects progress more slowly or requires more staff, which in turn increases costs. Supporters of pair programming estimate that these overtime is compensated because the generated code contains fewer errors, is better structured in general and requires much less maintenance.
+Another possible downside is that pair programming is suitable for team building, but only if both partners work well together. With such a close collaboration, their problems with each other may slow down the results or end up escalating to something much worse. It is for this reason that the assignment of pairs in this method cannot be done randomly. The ideal would be to work with a different partner each time, but this only works well if there is harmony in the whole team
+ 
+What are the benefits of this approach?
+ 
+Greater discipline: The presence of observing prevents the driver from being distracted from his tasks and forces him to do things well.
+Greater motivation: Programming in pairs is more enjoyable than programming alone, being an important motivation for the work team.
+Increased long-term productivity: According to a study, pair programming increases development time by 15%, but in return provides more quality in the design, reduces defects and improves communication between team members.
+Better learning: The driver can be accompanied by an observer more experienced than him, or vice versa. They are even likely to have a similar skill level in different fields. As a result, at least one of you will learn the best way: watching an expert work.
+Risk reduction: As the code will be subject to constant review, the risk of making mistakes that take us away from the desired solution will be reduced.
+
+Bibliography
+ 
+1 & 1 IONOS Inc. (2020, September 30). Pair Programming. IONOS Digital Guide.
+https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/pair-programming/
+ 
+A. (2016, November 3). Pair programming: improving the development process. 4R Solutions | Web & Mobile Design, Development and Programming.
+https://www.4rsoluciones.com/blog/pair-programming-mejorando-el-proceso-dedesarrollo-2
+
+## Unit-2
+
+
+### <p align="center" > TECNOLÓGICO NACIONAL DE MÉXICO INSTITUTO TECNOLÓGICO DE TIJUANA SUBDIRECCIÓN ACADÉMICA DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN PERIODO: Febrero-Junio  2021</p>
+
+###  <p align="center">  Carrera: Ing. En Sistemas Computacionales. 
+### <p align="center"> Materia: 	Minería de Datos  (BDD-1704 SC9A	).</p>
+
+### <p align="center">  Maestro: Jose Christian Romero Hernandez	</p>
+### <p align="center">  No. de control y nombre del alumno: 15211916 - Vargas Garcia Cinthia Gabriela</p>
+### <p align="center">  No. de control y nombre del alumno: 15212354 - Francisco Javier Diaz Urias </p>
+
+### Index
+
+&nbsp;&nbsp;&nbsp;[Practice_1 ](#practice_2)  
+
+&nbsp;&nbsp;&nbsp;[Research Data Mining](#Research Data Mining)  
+
+&nbsp;&nbsp;&nbsp;[Test_2](#Test_2)  
+
+### &nbsp;&nbsp;Practice_1.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
+
+// 1. Search for a data source with csv format (Free theme)
+
+// 2. Read the csv and analyze the data with R
+
+// 3. Generate three graphs with R that tells the history of the data, the first one that is a dot scatter graph, the second that is a faceted graph and the third a graph that tells us something statistical like the distribution of the data and containing the theme layer.
+   
+
+
+               
+#### Create an R script 
+     
+</br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; Code.
+
+``` R
+#Install library ggplot2
+
+library(ggplot2)
+
+# Load the file csv Happiness
+
+TimeUse <- read.csv(file.choose())
+TimeUse
+
+# Summary of file 
+
+summary.data.frame(TimeUse)
+
+# Show head 
+
+head(TimeUse)
+
+# Dot scatter graph
+# Country and time spendign in eating based on their sex
+
+ggplot(data = TimeUse) +
+  geom_point(mapping = aes(x = GEO.ACL00 , y = Eating, color = SEX))
+
+# Faceted graph
+# Country and time spendign sleeping  based on their sex
+ggplot(data = TimeUse) +
+  geom_point(mapping = aes(x = SEX , y = Sleep )) +
+  facet_wrap(~ GEO.ACL00, nrow = 2)
+
+# Distribution of the data
+# Total participants on the dataframe and time spending study  based on their sex
+ggplot(data = TimeUse) +
+  geom_bar(mapping = aes(x = SEX, fill = Study))
+
+```
+
+
+#### Plots
+
+
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/puntos.JPG?raw=true)
+
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/facetas.JPG?raw=true)
+
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/distribucion.JPG?raw=true)
+
+### &nbsp;&nbsp;Research Data Mining.
+
+## Origin of graphs
+
+
+
+What is the origin of the graphs?
+<div align="justify">
+Just over 250 years ago, the natural philosopher and theologian Joseph Priestley (1733-1804) published in his work A New Chart of History the first known chronograms. Priestley was a great pedagogue in very diverse subjects such as grammar or history, the study of which was for him a moral imperative. And it was precisely for his history classes that he designed a type of graph where different bars on a timeline represented in context and allowed different time periods to be compared, such as lives of people or durations of empires. Priestley's schedules caused a sensation, and his work was reissued dozens of times.
+
+
+Two decades later, inspired by Priestley, William Playfair (1759-1823), a Scottish engineer and political economist, pioneered the use of graphs to explore, understand, and communicate data by inventing various types of diagrams. Specifically in 1786 he published his Commercial and Political Atlas, considered the first important work with statistical graphics.
+
+In 43 wonderful graphs, Playfair uses lines to represent the evolution over the years of imports and exports between different countries. Incidentally, the absence of historical data for Scotland, which prevented him from reproducing that same analysis, led him to a second innovation: the bar graph. Given that he had data for a single year, he decided to arrange exports and imports in 17 pairs of bars, one for each country with which Scotland had economic relations.
+
+
+Interestingly, this is the first known graph that does not have a spatial dimension (like a map) or a temporal dimension (like Priestley's timelines). For the first time in history, a graphical solution is given to a problem of pure comparison of quantitative data. And if that wasn't enough, in addition to being considered the father of line, area, and bar graphs, Playfair also has the dubious honor of being the inventor of the pie chart, in his 1801 Statistical Breviary.
+
+
+Not surprisingly, it was this pie chart, designed to compare proportions in a compact way, that inspired the next protagonist: Florence Nightingale (1820-1910). Nightingale was a British nurse, writer, and statistician, considered the founder of modern nursing and the first woman to be elected to the Royal Statistical Society in 1859. She was a living myth of Victorian England for her important work during the Crimean War. (1853-1856). In the military hospital where she was stationed, she dedicated herself to keeping a meticulous accounting of the causes of death of the soldiers, and she used the so-called rose diagram to communicate the results of her study.
+
+
+It is a circular histogram that accounts for the seasonality of the various causes of death and their impact, highlighting deaths from infectious diseases. Thanks to this visualization, she managed to convince the British Parliament of the need to carry out a drastic reform of hygiene measures in hospitals.
+These and other pioneers have made graphs a fundamental part of statistical data analysis, and their innovations are still relevant, as well as serving as excellent models of clarity in representation.
+
+What is the grammar of graphs?
+
+Every day you can find various graphs that show different statistical data: from the evolution of the cost of mortgages to the distribution of income in a country. There are many ways to represent your data, but not all of them are as efficient or as correct. The key is to understand what we want to communicate and how we are going to structure it. An analogy (not to be interpreted literally) was established between the grammatical construction and the structure of a graph.
+
+An analogy (not to be interpreted literally) was established between the grammatical construction and the structure of a graph.
+
+The analysis of many graphs drew some conclusions to recommend some tips with which to build a graph that did not give rise to confusion and was faithful to its original message.
+
+## Distributions that exist statistically
+
+Bernoulli distribution
+
+It consists of carrying out a random experiment only once and observing whether a certain event occurs or not, where p is the probability that this is the case (success) and q = 1-p the probability that it is not (failure). In reality it is not more than one that can only take two modalities, that is why the fact of calling the possible results of the result tests success or failure. We could therefore define this experiment by means of a v.a. discrete X that takes the values ​​X = 0 if the event does not occur, and X = 1 otherwise.
+
+Binomial distribution
+
+The binomial distribution is a discrete probability distribution that measures the number of successes in a sequence of n independent BERNOULLI trials, with a fixed probability p of occurrence of success between trials. • There are many situations in which a binomial experience. Each of the experiments is independent of the rest (the probability of the result of one experiment does not depend on the result of the rest). The result of each experiment must admit only two categories (which are called success and failure). The probabilities of both possibilities must be constant in all the experiments (they are denoted as pyqopy 1-p). • The variable that measures the number of successes that have occurred in the n experiments is designated by X. • When they occur Under these circumstances, the variable X is said to follow a binomial probability distribution, and is denoted B (n, p)
+
+Poisson distribution
+
+It is a discrete model, but in which the set of values ​​with non-zero probability is not finite, but countable. • This distribution is usually used for counts of the number of individuals per unit of time, space, etc. • Properties from the Poisson model • 1) Expectation: E (X) = λ • 2) Variance: V (X) = λ • In this distribution, the expectation and the variance coincide.
+
+Normal distribution
+
+In statistics and probability, it is called a normal distribution, Gaussian distribution or Gaussian distribution, to one of the probability distributions of a continuous variable that most often appears approximate in real phenomena. • The graph of its density function has a bell shape and is symmetric with respect to a certain parameter. This curve is known as a Gaussian bell and is the graph of a Gaussian function.
+
+Gamma distribution
+
+In statistics the gamma distribution is a continuous probability distribution with two parameters k and λ whose density function for values ​​x> 0 is • Here e is the number and and Γ is the gamma function. For values ​​the that is Γ (k) = (k - 1)! (the factorial of k - 1). In this case - for example to describe a Poisson process - they are called the Erlang distribution with a parameter θ = 1 / λ. • The expected value and the variance of a random variable X of gamma distribution are E * X + = k / λ = kθ V * X + = k / λ2 = kθ2.
+
+Student distribution
+
+In probability and statistics, the t (Student's) distribution is a probability distribution that arises from the problem of estimating the mean of a normally distributed population when the sample size is small. It arises, in most practical statistical studies, when the standard deviation of a population is unknown and must be estimated from the data of a sample. • The t-Student test was developed in 1899 by the English chemist William Sealey Gosset (1876-1937), while working on quality control techniques for the Guinness distilleries in Dublin. Because at the distillery, his job was not initially that of a statistician and his dedication should be exclusively aimed at improving production costs, he published his findings anonymously by signing his articles with the name of "Student".
+
+### &nbsp;&nbsp;Test_2.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
+
+// Develop the following problem with R and RStudio for knowledge extraction
+that the problem requires.
+
+               
+#### Create an R script 
+     
+</br>
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; Code.
+
+``` R
+# Get the path and select the directory of file to use
+getwd()
+setwd("C:/Users/cheli/Documents/DataMining-master/Datasets")
+getwd()
+
+# Read the file to use
+movies <- read.csv("Project-Data.csv")
+
+# Show the first rows data of the file to use
+head(movies)
+
+# Show the lat rows of the file
+tail(movies)
+
+#Summary of the movies
+summary(movies)
+
+# Rename the columns 
+colnames(movies) <- c("Day_Week","Director","Genre","Title","Release_Date","Studio","Adjusted Gross","Budget","Gross","IMDb_Rating","MovieLens_Rating","Overseas","Overseas%","Profit","Profit%","Runtime","US","GrossPor")
+
+# Filter the data to eliminate unnecessary data
+filter_movies <- (movies$Genre=="action" | movies$Genre=="adventure" | movies$Genre=="animation" | movies$Genre=="comedy" | movies$Genre=="drama") & (movies$Studio=="Buena Vista Studios" | movies$Studio=="Fox" | movies$Studio=="Paramount Pictures" | movies$Studio=="Sony" | movies$Studio=="Universal" | movies$Studio=="WB")
+
+# Shows the previously made filter, each data shows it as true or false
+filter_movies 
+
+# Compares the data that was loaded with the array 
+movies <- movies[filter_movies,]
+head(movies)
+
+# Load the library to use, in this case to use plots we are using ggplot2
+library(ggplot2) 
+
+# Declaration of the input data and set values to "x" and "y"
+gg <- ggplot(movies, aes(x=Genre, y=GrossPor, color=Studio,Size=Budget))
+
+# Create a plot using geom_gitter and geom_boxplot to graph the values, also customize the plot the closet thing to the example
+gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.5,color="Black",outlier.shape = NA)+ theme(
+  plot.title = element_text(color="Black", size=16, hjust = 0.5),
+  axis.title.x = element_text(color="blue", size=16),
+  axis.title.y = element_text(color="blue", size=16)
+)  +  ggtitle("Domestic Gross % by Genre") + ylab("Gross %US")  
+
+```
+
+
+### Plot
+
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/183771764_1152345595188409_6233300732558023209_n.png?raw=true)
+
+### &nbsp;&nbsp; Video Link Unit_2 .
+ https://youtu.be/hKKwGGqpfUM
+
