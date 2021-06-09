@@ -21,7 +21,7 @@
 
 &nbsp;&nbsp;&nbsp;[Practice 5](#practice-5)
 
-&nbsp;&nbsp;&nbsp;[Homework](homework)
+&nbsp;&nbsp;&nbsp;[Homework](#homework)
 
 &nbsp;&nbsp;&nbsp;[Test 3](#Test-3)
 
