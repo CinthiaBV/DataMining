@@ -15,13 +15,13 @@
 
 &nbsp;&nbsp;&nbsp;[Practice 2](#practice-2)
 
-&nbsp;&nbsp;&nbsp;[Practice 4](#practice-3)
+&nbsp;&nbsp;&nbsp;[Practice 3](#practice-3)
 
 &nbsp;&nbsp;&nbsp;[Practice 4](#practice-4)
 
-&nbsp;&nbsp;&nbsp;[Practice 4](#practice-5)
+&nbsp;&nbsp;&nbsp;[Practice 5](#practice-5)
 
-&nbsp;&nbsp;&nbsp;[Practice 4](#Test-3)
+&nbsp;&nbsp;&nbsp;[Test 3](#Test-3)
 
 ### &nbsp;&nbsp;Practice 1.
 
@@ -135,28 +135,20 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ````
 #### Plots Practice 1
 
-EstimatedSalary/Purchased traning set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/EstimatedSalary-Purchased-training-set.png?raw=true)
 
-Age/Purchased training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Age-Purchased-training-set.png?raw=true)
 
-EstimatedSalary/Purchased test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/EstimatedSalary-Purchased-test-set.png?raw=true)
 
-Age/Purchased test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Age-Purchased-test-set.png?raw=true)
 
-Logistic Regression training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistec%20regression-Training%20set-1.png?raw=true)
 
-Logistic Regression training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistic%20training%20set%202.png?raw=true)
 
-Logistic Regression test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistec%20regression-Test%20set-1.png?raw=true)
 
-Logistic Regression test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Logistic%20test%20set%202.png?raw=true)
 
 ### &nbsp;&nbsp;Practice 2.
@@ -243,7 +235,7 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
 Knn set 
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.png?raw=true)
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/knn.PNG?raw=true)
 
 
 ### &nbsp;&nbsp;Practice 3.
@@ -335,19 +327,14 @@ text(classifier, cex=0.6)
 ```
 #### Plots Practice 3
 
-Decision Tree training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Decision_tree_classifier%20training%20set%201.png?raw=true)
 
-Decision Tree training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Decision_tree_classifier%20training%20set%202.png?raw=true)
 
-Decision Tree test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Decision_tree_classifier%20test%20set%201.png?raw=true)
 
-Decision Tree test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/Decision_tree_classifier%20test%20set%202.png?raw=true)
 
-Decision Tree plot
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/plot%20decision%20tree.png?raw=true)
 
 ### &nbsp;&nbsp;Practice 4.
@@ -539,16 +526,12 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 #### Plots Practice 5
 
-SVM training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/SVM%20training%20set%201.png?raw=true)
 
-SVM training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/SVM%20training%20set%202.png?raw=true)
 
-SVM test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/SVM%20test%20set%201.png?raw=true)
 
-SVM test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/SVM%20test%20set%202.png?raw=true)
 
 ### &nbsp;&nbsp;Test 3.
@@ -640,14 +623,10 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 #### Plots Test 3
 
-Naive Bayes training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/test%203%20naive%20bayes%20training%20set%201.png?raw=true)
 
-Naive Bayes training set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/test%203%20naive%20bayes%20training%20set%202.png?raw=true)
 
-Naive Bayes test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/test3%20naive%20bayes%20test%20set%201.png?raw=true)
 
-Naive Bayes test set
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/test3%20naive%20bayes%20test%20set%202.png?raw=true)
