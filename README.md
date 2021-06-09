@@ -21,6 +21,8 @@
 
 &nbsp;&nbsp;&nbsp;[Practice 5](#practice-5)
 
+&nbsp;&nbsp;&nbsp;[Homework](homework)
+
 &nbsp;&nbsp;&nbsp;[Test 3](#Test-3)
 
 ### &nbsp;&nbsp;Practice 1.
@@ -534,17 +536,6 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/SVM%20test%20set%202.png?raw=true)
 
-### &nbsp;&nbsp;Test 3.
-
-#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
-
-#### Implement the Naive Bayes classification model with the dataset
-Social_Network_Ads.csv and using the e1071 library with the naiveBayes () function.
-Once the classifier is obtained, do the data visualization analysis
-correspondent.
-
-#### &nbsp;&nbsp;&nbsp;&nbsp; Code.
-
 ### &nbsp;&nbsp;Homework.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
@@ -571,6 +562,17 @@ The Euclidean distance is based on the Pythagorean theorem, according to which, 
 This formula will work regardless of the number of variables there are. Starting from the Pythagorean theorem, we can find the distance in a straight line between two points, that is, the Euclidean distance. In the following image we can see how the distance between points p and q would be calculated.
 
 Thus, since the Euclidean distance is one of the possible distance measures that the kNN algorithm can use.
+
+### &nbsp;&nbsp;Test 3.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
+
+#### Implement the Naive Bayes classification model with the dataset
+Social_Network_Ads.csv and using the e1071 library with the naiveBayes () function.
+Once the classifier is obtained, do the data visualization analysis
+correspondent.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; Code.
 
 ```R
 getwd()
