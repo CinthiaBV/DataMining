@@ -660,3 +660,7 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/test3%20naive%20bayes%20test%20set%201.png?raw=true)
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-3/Unit-3/Images/test3%20naive%20bayes%20test%20set%202.png?raw=true)
+
+### Link of Evaluation
+
+https://youtu.be/VPxcUOR3qyg
