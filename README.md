@@ -108,3 +108,7 @@ datameans $ betweenss
 
 
 ![](https://github.com/CinthiaBV/DataMining/blob/Unit-4/Unit-4/Images/plot4.PNG?raw=true)
+
+## Video 
+
+https://youtu.be/CdsfLaOYCGU
