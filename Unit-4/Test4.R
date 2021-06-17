@@ -31,3 +31,18 @@ class = factor (dataset [, 5]) ## classifies and stores data in levels
 
 # We assign to the variable predicts, the classes predicted by kmeans.
 predicts = NULL
+
+# The function mode will count the number of records of each class
+mode = function (x) {
+  ux = unique (x)
+  ux [which.max (tabulate (match (x, ux)))]
+}
+
+# We segment the clustering, We apply the mode function which will return the highest number of occurrences linked to the assigned class.
+predicts [datameans $ cluster == mode (datameans $ cluster [1:50])] = "setosa"
+predicts [datameans $ cluster == mode (datameans $ cluster [50: 100])] = "versicolor"
+predicts [datameans $ cluster == mode (datameans $ cluster [100: 150])] = "virginica"
+
+# The variable is transformed  predicts to factor.
+predicts = factor (predicts)
+predicts
