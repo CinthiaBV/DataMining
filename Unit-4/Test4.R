@@ -46,3 +46,21 @@ predicts [datameans $ cluster == mode (datameans $ cluster [100: 150])] = "virgi
 # The variable is transformed  predicts to factor.
 predicts = factor (predicts)
 predicts
+
+# Confusion matrix
+df = table (class, predicts)
+df
+precision = (sum (diag (df))) / sum (df)
+precision
+
+## we graph
+clusplot (dataset, datameans $ cluster,
+          shade = TRUE, color = TRUE, plotchar = FALSE, span = TRUE,
+          labels = 2, main = paste ('Clusters'), xlab = 'Sepal', ylab = 'Petal')
+
+datameans $ size
+datameans $ totss
+datameans $ withinss
+datameans $ iter
+datameans $ tot.withinss
+datameans $ betweenss
