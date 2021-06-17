@@ -1,5 +1,8 @@
 ## Unit-3
 
+## Unit-4
+
+
 
 ### <p align="center" > TECNOLÓGICO NACIONAL DE MÉXICO INSTITUTO TECNOLÓGICO DE TIJUANA SUBDIRECCIÓN ACADÉMICA DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN PERIODO: Agosto-Diciembre  2020</p>
 
@@ -11,6 +14,7 @@
 ### <p align="center">  No. de control y nombre del alumno: 15212354 - Francisco Javier Diaz Urias </p>
 
 ## Index
+
 &nbsp;&nbsp;&nbsp;[Practice 1](#practice-1)  
 
 &nbsp;&nbsp;&nbsp;[Practice 2](#practice-2)
@@ -23,11 +27,13 @@
 
 &nbsp;&nbsp;&nbsp;[Homework](#homework)
 
+
 &nbsp;&nbsp;&nbsp;[Test 3](#Test-3)
 
 ### &nbsp;&nbsp;Practice 1.
 
 #### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
+
 
 #### Analyze Logistic Regression 
 
@@ -96,6 +102,15 @@ ggplot(test_set, aes(x=Age, y=Purchased)) + geom_point() +
 # Import library ElemStatLearn
 library(ElemStatLearn)
 
+
+### &nbsp;&nbsp;Test 1.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
+  //Implement the K-Means grouping model with the Iris.csv dataset found 
+  //at https://github.com/jcromerohdz/iris using the kmeans () method in R. 
+  //Once the grouping model is obtained do the corresponding data visualization analysis.
+
+
 # In this part we are using the training set to a new graph to visualize the training set results
 set = training_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
@@ -113,6 +128,7 @@ plot(set[, -3],
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+
 
 #  Import library ElemStatLearn
 library(ElemStatLearn)
@@ -749,102 +765,82 @@ https://www.4rsoluciones.com/blog/pair-programming-mejorando-el-proceso-dedesarr
 
 // 1. Search for a data source with csv format (Free theme)
 
-// 2. Read the csv and analyze the data with R
-
-// 3. Generate three graphs with R that tells the history of the data, the first one that is a dot scatter graph, the second that is a faceted graph and the third a graph that tells us something statistical like the distribution of the data and containing the theme layer.
-   
-
-
-               
-#### Create an R script 
-     
-</br>
-
-#### &nbsp;&nbsp;&nbsp;&nbsp; Code.
-
 ``` R
-#Install library ggplot2
+#Iris csv
+#added the necessary libraries
+library (stats) #contains the method to implement kmeans "
+library (cluster) # contains everything to evaluate clusters "
+library (ggplot2) #contains the necessary tools for graphing and interpreting data
 
-library(ggplot2)
 
-# Load the file csv Happiness
+#We indicate the path of the folder where the file to be used is located
+getwd()
+setwd ("C:/Users/filos/Desktop/Test4/")
+getwd ()
 
-TimeUse <- read.csv(file.choose())
-TimeUse
+# We import the data from the specified file type csv
+dataset = read.csv ('iris.csv')
 
-# Summary of file 
+# Delete the species column and scale the data since we only need numerical values
+dataset.scale <- scale (dataset [, -5])
 
-summary.data.frame(TimeUse)
+#The previous count of each type of species is carried out
+dataset $ species
 
-# Show head 
+# Application of K MEANS this receives two parameters: data and number of clusters to form.
 
-head(TimeUse)
+datameans = kmeans (dataset.scale, 3)
+datameans
 
-# Dot scatter graph
-# Country and time spendign in eating based on their sex
+# Get group to which the data belongs is obtained according to the kmeans function.
+datameans $ cluster
+table (datameans $ cluster, dataset $ species)
 
-ggplot(data = TimeUse) +
-  geom_point(mapping = aes(x = GEO.ACL00 , y = Eating, color = SEX))
+# We assign the class variable, the numerical data as a factor of the data set.
+class = factor (dataset [, 5]) ## classifies and stores data in levels
 
-# Faceted graph
-# Country and time spendign sleeping  based on their sex
-ggplot(data = TimeUse) +
-  geom_point(mapping = aes(x = SEX , y = Sleep )) +
-  facet_wrap(~ GEO.ACL00, nrow = 2)
+# We assign to the variable predicts, the classes predicted by kmeans.
+predicts = NULL
 
-# Distribution of the data
-# Total participants on the dataframe and time spending study  based on their sex
-ggplot(data = TimeUse) +
-  geom_bar(mapping = aes(x = SEX, fill = Study))
+# The function mode will count the number of records of each class
+mode = function (x) {
+  ux = unique (x)
+  ux [which.max (tabulate (match (x, ux)))]
+}
+
+# We segment the clustering, We apply the mode function which will return the highest number of occurrences linked to the assigned class.
+predicts [datameans $ cluster == mode (datameans $ cluster [1:50])] = "setosa"
+predicts [datameans $ cluster == mode (datameans $ cluster [50: 100])] = "versicolor"
+predicts [datameans $ cluster == mode (datameans $ cluster [100: 150])] = "virginica"
+
+# The variable is transformed  predicts to factor.
+predicts = factor (predicts)
+predicts
+
+# Confusion matrix
+
+df = table (class, predicts)
+df
+precision = (sum (diag (df))) / sum (df)
+precision
+
+## we graph
+clusplot (dataset, datameans $ cluster,
+          shade = TRUE, color = TRUE, plotchar = FALSE, span = TRUE,
+          labels = 2, main = paste ('Clusters'), xlab = 'Sepal', ylab = 'Petal')
+
+datameans $ size
+datameans $ totss
+datameans $ withinss
+datameans $ iter
+datameans $ tot.withinss
+datameans $ betweenss
 
 ```
 
-
-#### Plots
-
-
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/puntos.JPG?raw=true)
-
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/facetas.JPG?raw=true)
-
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/distribucion.JPG?raw=true)
-
-### &nbsp;&nbsp;Research Data Mining.
-
-## Origin of graphs
+## Plot
 
 
-
-What is the origin of the graphs?
-<div align="justify">
-Just over 250 years ago, the natural philosopher and theologian Joseph Priestley (1733-1804) published in his work A New Chart of History the first known chronograms. Priestley was a great pedagogue in very diverse subjects such as grammar or history, the study of which was for him a moral imperative. And it was precisely for his history classes that he designed a type of graph where different bars on a timeline represented in context and allowed different time periods to be compared, such as lives of people or durations of empires. Priestley's schedules caused a sensation, and his work was reissued dozens of times.
-
-
-Two decades later, inspired by Priestley, William Playfair (1759-1823), a Scottish engineer and political economist, pioneered the use of graphs to explore, understand, and communicate data by inventing various types of diagrams. Specifically in 1786 he published his Commercial and Political Atlas, considered the first important work with statistical graphics.
-
-In 43 wonderful graphs, Playfair uses lines to represent the evolution over the years of imports and exports between different countries. Incidentally, the absence of historical data for Scotland, which prevented him from reproducing that same analysis, led him to a second innovation: the bar graph. Given that he had data for a single year, he decided to arrange exports and imports in 17 pairs of bars, one for each country with which Scotland had economic relations.
-
-
-Interestingly, this is the first known graph that does not have a spatial dimension (like a map) or a temporal dimension (like Priestley's timelines). For the first time in history, a graphical solution is given to a problem of pure comparison of quantitative data. And if that wasn't enough, in addition to being considered the father of line, area, and bar graphs, Playfair also has the dubious honor of being the inventor of the pie chart, in his 1801 Statistical Breviary.
-
-
-Not surprisingly, it was this pie chart, designed to compare proportions in a compact way, that inspired the next protagonist: Florence Nightingale (1820-1910). Nightingale was a British nurse, writer, and statistician, considered the founder of modern nursing and the first woman to be elected to the Royal Statistical Society in 1859. She was a living myth of Victorian England for her important work during the Crimean War. (1853-1856). In the military hospital where she was stationed, she dedicated herself to keeping a meticulous accounting of the causes of death of the soldiers, and she used the so-called rose diagram to communicate the results of her study.
-
-
-It is a circular histogram that accounts for the seasonality of the various causes of death and their impact, highlighting deaths from infectious diseases. Thanks to this visualization, she managed to convince the British Parliament of the need to carry out a drastic reform of hygiene measures in hospitals.
-These and other pioneers have made graphs a fundamental part of statistical data analysis, and their innovations are still relevant, as well as serving as excellent models of clarity in representation.
-
-What is the grammar of graphs?
-
-Every day you can find various graphs that show different statistical data: from the evolution of the cost of mortgages to the distribution of income in a country. There are many ways to represent your data, but not all of them are as efficient or as correct. The key is to understand what we want to communicate and how we are going to structure it. An analogy (not to be interpreted literally) was established between the grammatical construction and the structure of a graph.
-
-An analogy (not to be interpreted literally) was established between the grammatical construction and the structure of a graph.
-
-The analysis of many graphs drew some conclusions to recommend some tips with which to build a graph that did not give rise to confusion and was faithful to its original message.
-
-## Distributions that exist statistically
-
-Bernoulli distribution
 
 It consists of carrying out a random experiment only once and observing whether a certain event occurs or not, where p is the probability that this is the case (success) and q = 1-p the probability that it is not (failure). In reality it is not more than one that can only take two modalities, that is why the fact of calling the possible results of the result tests success or failure. We could therefore define this experiment by means of a v.a. discrete X that takes the values ​​X = 0 if the event does not occur, and X = 1 otherwise.
 
@@ -929,10 +925,14 @@ gg + geom_jitter(aes(color=Studio,size=Budget)) + geom_boxplot(size=0.5,alpha=0.
 ```
 
 
-### Plot
+![](https://github.com/CinthiaBV/DataMining/blob/Unit-4/Unit-4/Images/plot4.PNG?raw=true)
 
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-2/Unit-2/Image/183771764_1152345595188409_6233300732558023209_n.png?raw=true)
+## Video 
+
 
 ### &nbsp;&nbsp; Video Link Unit_2 .
  https://youtu.be/hKKwGGqpfUM
+
+
+https://youtu.be/CdsfLaOYCGU
 
