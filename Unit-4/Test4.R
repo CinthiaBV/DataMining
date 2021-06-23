@@ -1,37 +1,3 @@
-## Unit-4
-
-
-### <p align="center" > TECNOLÓGICO NACIONAL DE MÉXICO INSTITUTO TECNOLÓGICO DE TIJUANA SUBDIRECCIÓN ACADÉMICA DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN PERIODO: Agosto-Diciembre  2020</p>
-
-###  <p align="center">  Carrera: Ing. En Sistemas Computacionales. 
-### <p align="center"> Materia: 	Datos Masivos (BDD-1704 SC9A	).</p>
-
-### <p align="center">  Maestro: Jose Christian Romero Hernandez	</p>
-### <p align="center">  No. de control y nombre del alumno: 15211916 - Vargas Garcia Cinthia Gabriela</p>
-### <p align="center">  No. de control y nombre del alumno: 15212354 - Francisco Javier Diaz Urias </p>
-
-## Index
-
-&nbsp;&nbsp;&nbsp;[Test-1](#Test-1)
-
-
-
-
-### &nbsp;&nbsp;Test 1.
-
-#### &nbsp;&nbsp;&nbsp;&nbsp; Instructions.
-  //Implement the K-Means grouping model with the Iris.csv dataset found 
-  //at https://github.com/jcromerohdz/iris using the kmeans () method in R. 
-  //Once the grouping model is obtained do the corresponding data visualization analysis.
-
-               
-#### Create an R script that will count how many of these numbers fall between -1 and 1 and divide by the total quantity of N.
-     
-</br>
-
-#### &nbsp;&nbsp;&nbsp;&nbsp; Code.
-
-``` R
 #Iris csv
 #added the necessary libraries
 library (stats) #contains the method to implement kmeans "
@@ -53,7 +19,6 @@ dataset.scale <- scale (dataset [, -5])
 dataset $ species
 
 # Application of K MEANS this receives two parameters: data and number of clusters to form.
-
 datameans = kmeans (dataset.scale, 3)
 datameans
 
@@ -83,7 +48,6 @@ predicts = factor (predicts)
 predicts
 
 # Confusion matrix
-
 df = table (class, predicts)
 df
 precision = (sum (diag (df))) / sum (df)
@@ -100,16 +64,3 @@ datameans $ withinss
 datameans $ iter
 datameans $ tot.withinss
 datameans $ betweenss
-
-```
-
-## Plot
-
-
-
-![](https://github.com/CinthiaBV/DataMining/blob/Unit-4/Unit-4/Images/plot4.PNG?raw=true)
-
-## Video 
-
-
-https://youtu.be/CdsfLaOYCGU
